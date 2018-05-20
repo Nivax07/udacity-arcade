@@ -1,25 +1,74 @@
-* {
-    box-sizing: border-box;
-  }
-  html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    text-align: center;
-    font-family: monospace;
-  }
-  .level {
-    font-size: 20px;
-    padding-top: 20px;
-  }
-  
-  /* ANIMATIONS */
-  
-  @keyframes pulse {
-    from { transform: scale(1); }
-    to { transform: scale(1.3); }
-  }
+html {
+box-sizing: border-box;
+}
+
+html,
+body {
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 20px;
+overflow-y: auto;
+flex-direction: column;
+}
+
+h1 {
+font-family: 'Press Start 2P', cursive;
+text-align: center;
+font-weight: bolder;
+font-weight: 300;
+padding-top: 10px;
+}
+
+.level {
+font-size: 20px;
+padding-top: 20px;
+}
+
+.udacity-logo-mobile {
+display: none;
+}
+
+.udacity-logo {
+height: 50px;
+}
+
+canvas {
+display: inherit;
+margin: 0 auto;
+}
+
+@media only screen and (max-width: 460px) {
+.udacity-logo { 
+display: none;
+}
+.udacity-logo-mobile {
+position: absolute;
+display: block;
+width: 90px;
+top: 40px;
+opacity: 0.2;
+}
+canvas {
+width: 100%;
+}
+}
+
+/* ANIMATIONS */
+
+@keyframes pulse {
+from { transform: scale(1); }
+to { transform: scale(1.3); }
+}
   
