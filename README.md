@@ -27,4 +27,4 @@ The goal of the game is to reach the water side while avoiding getting hit by th
 * [Udacity](https://www.udacity.com/) Some CSS tutorials
 * [CodePen](https://codepen.io/) Some jQuery inspiration
 
-# memory-game
+# udacity-arcade
