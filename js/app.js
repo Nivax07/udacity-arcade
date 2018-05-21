@@ -2,6 +2,7 @@
 var level = 1;
 
 // Enemy class
+'use strict';
 var Enemy = function() {
 
   // Set enemy image
@@ -51,8 +52,8 @@ Enemy.prototype.update = function(dt) { // dt = time delta between ticks
 
     // Enemies go to random positions
     allEnemies.forEach(function(enemy) {
-      enemy.x = Math.floor((Math.random() * 504) + -90);
-      enemy.y = enemy.yArray[Math.floor(Math.random() * enemy.yArray.length)];
+      this.x = Math.floor((Math.random() * 504) + -90);
+      this.y = enemy.yArray[Math.floor(Math.random() * enemy.yArray.length)];
     });
 
     // Return to level 1
