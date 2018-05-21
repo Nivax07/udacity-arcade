@@ -12,6 +12,16 @@ You can clone this repo by typing
 git clone https://github.com/Nivax07/udacity-arcade.git
 ```
 
+## Play the Game
+
+There are two ways to play the game:
+Download/clone this repository, extract it and run the index.html on your Browser.
+
+OR
+
+Play the live version [here](https://nivax07.github.io/udacity-arcade/).
+
+
 ## Game Rules
 
 The goal of the game is to reach the water side while avoiding getting hit by the bugs. When the player reaches the water side you pass to the next level where the difficult increases making the bugs move faster. If you get hit you loose and go back to the first level.
